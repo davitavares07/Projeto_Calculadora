@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9b9b9b;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.calculadora {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px #303030;
+    width: 340px; /* Largura da calculadora */
+}
+
+.tela {
+    background-color: #9AB0A4;
+    color: #a70101;
+    font-size: 3em;
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    overflow-x: auto;
+    word-wrap: break-word;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cria 4 colunas de tamanho igual */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.botao {
+    background-color: #9AB0A4;
+    color: #fafafa;
+    border: none;
+    border-radius: 100px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: crosshair;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #555555;
+}
+
+.botao:active {
+    background-color: #777;
+}
+
+.botao.operacao {
+    background-color: #f0ad4e; /* Cor laranja para operações */
+    color: #fafafa;
+    grid-row: span 2;
+}
+
+.botao.especial {
+    background-color: #f0ad4e; /* Cor laranja para operações */
+    color: #fafafa;
+}
+
+.botao.especial:hover {
+    background-color: #ec971f;
+}
+
+.botao.funcao {
+    background-color: #ab0000; /* Cor laranja para operações */
+    color: #fafafa;
+}
+
+.botao.funcao:hover {
+    background-color: #560000;
+}
+
+.botao.operacao:hover {
+    background-color: #ec971f;
+}
+
+.botao.operacao:active {
+    background-color: #d58512;
+}
+
+.botao.igual {
+    background-color: #5cb85c; /* Cor verde para o botão de igual */
+    color: #fafafa;
+}
+
+.botao.igual:hover {
+    background-color: #1c8c1c;
+}
+
+.botao.igual:active {
+    background-color: #449d44;
+}
+
+.botao.zero {
+    grid-column: span 2; /* Faz o botão zero ocupar 2 colunas */
+}

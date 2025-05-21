@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="reset.css">
+    <title>Calculadora Simples</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Este É um exemplo de reset css</h1>
 
+
+
+    <div class="calculadora">
+        <div class="tela" id="tela">0</div>
+        <div class="botoes">
+            <button class="botao" onclick="adicionarNumero('7')">7</button>
+            <button class="botao" onclick="adicionarNumero('8')">8</button>
+            <button class="botao" onclick="adicionarNumero('9')">9</button>
+            <button class="botao funcao" onclick="limparTela()">AC</button>
+            <button class="botao operacao" onclick="adicionarOperacao('/')">/</button>
+  
+            
+            <button class="botao" onclick="adicionarNumero('4')">4</button>
+            <button class="botao" onclick="adicionarNumero('5')">5</button>
+            <button class="botao" onclick="adicionarNumero('6')">6</button>
+            <button class="botao operacao" onclick="adicionarOperacao('*')">x</button>
+
+            <button class="botao" onclick="adicionarNumero('1')">1</button>
+            <button class="botao" onclick="adicionarNumero('2')">2</button>
+            <button class="botao" onclick="adicionarNumero('3')">3</button>
+            <button class="botao operacao" onclick="adicionarOperacao('-')">-</button>
+
+            <button class="botao zero" onclick="adicionarNumero('0')">0</button>
+            <button class="botao" onclick="adicionarNumero('.')">.</button>
+            <button class="botao operacao" onclick="adicionarOperacao('+')">+</button>
+            <button class="botao especial" onclick="adicionarOperacao('par')">()</button>
+            <button class="botao especial" onclick="adicionarOperacao('inv')">+/-</button>
+            <button class="botao especial" onclick="adicionarOperacao('exp')">x²</button>
+
+
+            <button class="botao igual" onclick="calcular()">=</button>
+
+
+
+        </div>
+    </div>
 </body>
 </html>
